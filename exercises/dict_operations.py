@@ -21,3 +21,15 @@ def student_dict_operations(students_dict, operation, *args):
     """
     # 请在下方编写代码
     pass 
+    if operation=="add":
+        name,score=args
+        students_dict[name]=score
+        return f"学生{name}添加成功,成绩为{score}"
+    elif operation=="remove":
+        name=args[0]
+        if name in student_dict:
+            del student_dict[name]
+            return f"学生{name}已删除"
+        else:
+            return f"学生{name}不存在"
+        
