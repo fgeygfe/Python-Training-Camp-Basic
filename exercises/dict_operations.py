@@ -32,4 +32,14 @@ def student_dict_operations(students_dict, operation, *args):
             return f"学生{name}已删除"
         else:
             return f"学生{name}不存在"
-        
+    elif operation=="update":
+        name,score=args
+        if name in students_dict:
+            students_dict[name]=score
+            return f"学生{name}更新为{name}"
+        else :
+            return f"学生{name}不存在"
+    else:
+        name=args[0]
+        if name in students_dict:
+            return f"学生{name}不存在"
