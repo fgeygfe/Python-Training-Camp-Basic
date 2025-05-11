@@ -19,3 +19,6 @@ def calculate_square_root(number):
     """
     # 请在下方编写代码
     pass 
+    if number < 0 :
+        raise ValueError("输入数字必须是非负数")
+    return math.sqrt(number)
