@@ -21,3 +21,15 @@ def student_list_operations(students, operation, *args):
     """
     # 请在下方编写代码
     pass 
+    if operation == "add"
+        student_name=args[0]
+        student.append(student_name)
+    elif operation == "remove"
+        student_name=args[0]
+        students.remove(student_name)
+    elif operation == "update"
+        old_name,new_name=args
+        if old_name in students
+            index = students.index(old_name)
+            students[index]=new_name
+    return students
