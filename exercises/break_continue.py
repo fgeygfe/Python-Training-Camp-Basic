@@ -21,6 +21,6 @@ def skip_multiples_of_three(n):
     pass 
     result=[]
     for num in range(1,n+1):
-        if(num%3==0) continue
+        if(num%3==0): continue
         result.append(num)
     return result
